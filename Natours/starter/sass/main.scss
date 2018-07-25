@@ -1,11 +1,7 @@
-/*
-COLORS:
 
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark:#28b485;
 
 *,
 *::after,
@@ -33,8 +29,8 @@ body {
     height: 95vh;
     background-image: linear-gradient(
         to right bottom, 
-        hsla(111, 55%, 64%, 0.705), 
-        hsla(160, 64%, 43%, 0.418)), 
+        hsla($color-primary-light, 0.705), 
+        hsla($color-primary-dark, 0.418)), 
     url(../img/hero.jpg);
     background-size: cover; /* match whatever the width of viewport/element */
     background-position: top; /* OR CENTER ensures top image always stays at top of container when resizing */
