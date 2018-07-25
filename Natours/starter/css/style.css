@@ -26,24 +26,22 @@ body {
   background-position: top;
   /* OR CENTER ensures top image always stays at top of container when resizing */
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 3.5rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* no longer in relation to parent, but to element*/
-  /* otherwise it gets 50% from start of the h1 header */
-  text-align: center; }
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  /*clip off the corner*/ }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* no longer in relation to parent, but to element*/
+    /* otherwise it gets 50% from start of the h1 header */
+    text-align: center; }
 
 .heading-primary {
   color: white;
