@@ -87,8 +87,7 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   /*pseudo class*/
   text-transform: uppercase;
   text-decoration: none;
