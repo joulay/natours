@@ -29,8 +29,8 @@ body {
     height: 95vh;
     background-image: linear-gradient(
         to right bottom, 
-        hsla($color-primary-light, 0.705), 
-        hsla($color-primary-dark, 0.418)), 
+        rgba($color-primary-light, 0.705), 
+        rgba($color-primary-dark, 0.418)), 
     url(../img/hero.jpg);
     background-size: cover; /* match whatever the width of viewport/element */
     background-position: top; /* OR CENTER ensures top image always stays at top of container when resizing */
