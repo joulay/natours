@@ -2,6 +2,9 @@
     max-width: $grid-width;
     margin: 0 auto;
     background-color: #eee;
-    margin-bottom: $grid-vertical;
+
+    &:not(:last-child) {
+        margin-bottom: $grid-vertical;
+    }
 }
 
