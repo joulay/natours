@@ -110,7 +110,8 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto;
-  background-color: #eee; }
+  background-color: #eee;
+  margin-bottom: 80px; }
 
 .header {
   height: 95vh;
