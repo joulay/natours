@@ -12,8 +12,8 @@
     //* contains
     //$ ends with 
 
-    //select all elements that start with "col"
     [class^="col-"] { 
+    //select all elements that start with "col"
         float: left; 
         
         &:not(:last-child) {
