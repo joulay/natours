@@ -25,3 +25,20 @@
     }
 
 }
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text; // clip it to text, webkit. need prefix cuz it's so new
+    color: transparent; //need this as well
+    letter-spacing: 2px; //2px is so small, doesn't need to scale well, that's why not rem
+    transition: all .2s;
+
+
+    &:hover {
+        transform: skewY(2deg); //like a seesaw 
+        //skewX looks italicized but other direction
+    }
+}
