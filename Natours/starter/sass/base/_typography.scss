@@ -38,7 +38,7 @@
 
 
     &:hover {
-        transform: skewY(2deg); //like a seesaw 
+        transform: skewY(2deg) skewX(15deg); //like a seesaw 
         //skewX looks italicized but other direction
     }
 }

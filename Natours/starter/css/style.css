@@ -72,7 +72,10 @@ body {
   letter-spacing: 2px;
   transition: all .2s; }
   .heading-secondary:hover {
-    transform: skewY(2deg); }
+    transform: skewY(2deg) skewX(15deg); }
+
+.u-center-text {
+  text-align: center; }
 
 .btn:link, .btn:visited {
   /*pseudo class*/
@@ -121,8 +124,7 @@ body {
 
 .row {
   max-width: 114rem;
-  margin: 0 auto;
-  background-color: #eee; }
+  margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row::after {
@@ -130,7 +132,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: red;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
