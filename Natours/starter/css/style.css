@@ -161,3 +161,8 @@ body {
     /* no longer in relation to parent, but to element*/
     /* otherwise it gets 50% from start of the h1 header */
     text-align: center; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
