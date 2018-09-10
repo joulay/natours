@@ -9,6 +9,10 @@
     &__icon {
         font-size: 6rem;
         margin-bottom: .5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text; // clip it to text, webkit. need prefix cuz it's so new
+        color: transparent; //need this as well
     }
 
     &__text {
