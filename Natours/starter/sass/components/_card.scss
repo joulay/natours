@@ -1,4 +1,4 @@
-.card {
+.card { //FUNCTIONALITY
     perspective: 150rem; 
     -moz-perspective: 150rem; //to work in firefox as well
     position: relative;
@@ -40,5 +40,21 @@
 
     &:hover &__side--back{
         transform: rotateY(0deg);
+    }
+
+
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        
+        &--1 {
+            background-image: url(../img/nat-5.jpg);
+        }
+        &--2 {
+            background-image: url(../img/nat-6.jpg);
+        }
+        &--3 {
+            background-image: url(../img/nat-7.jpg);
+        }
     }
 }
