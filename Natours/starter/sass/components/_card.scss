@@ -1,7 +1,7 @@
 .card {
     perspective: 150rem; 
     -moz-perspective: 150rem; //to work in firefox as well
-
+    position: relative;
 
     &__side {
         background-color: orangered;
@@ -9,6 +9,11 @@
         font-size: 2rem;
         height: 50rem;
         transition: all .8s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden; //hides back part of element
 
         &--front {
             background-color: orangered;
