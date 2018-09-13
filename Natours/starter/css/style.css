@@ -163,6 +163,8 @@ body {
   transform: translateY(0px); }
 
 .card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
   background-color: orangered;
   height: 50rem;
   transition: all .8s; }

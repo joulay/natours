@@ -1,4 +1,7 @@
 .card {
+    perspective: 150rem; 
+    -moz-perspective: 150rem; //to work in firefox as well
+    
     background-color: orangered;
     height: 50rem;
     transition: all .8s;
