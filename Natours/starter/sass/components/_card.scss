@@ -3,6 +3,7 @@
     -moz-perspective: 150rem; //to work in firefox as well
     position: relative;
     height: 50rem; //necessary to have for card to match height
+    
 
     &__side {
         background-color: orangered;
@@ -16,6 +17,8 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden; //hides back part of element
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
             background-color: $color-white;
