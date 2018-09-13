@@ -15,12 +15,17 @@
         }
         &--back {
             background-color: green;
+            transform: rotateY(180deg);
         }
     }
     
 
 
-    &:hover &__side{
+    &:hover &__side--front{
         transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0deg);
     }
 }
