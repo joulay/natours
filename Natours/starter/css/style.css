@@ -171,6 +171,10 @@ body {
     font-size: 2rem;
     height: 50rem;
     transition: all .8s; }
+    .card__side--front {
+      background-color: orangered; }
+    .card__side--back {
+      background-color: green; }
   .card:hover .card__side {
     transform: rotateY(180deg); }
 
