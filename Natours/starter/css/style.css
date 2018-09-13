@@ -179,7 +179,7 @@ body {
     width: 100%;
     backface-visibility: hidden; }
     .card__side--front {
-      background-color: orangered; }
+      background-color: white; }
     .card__side--back {
       background-color: green;
       transform: rotateY(180deg); }
