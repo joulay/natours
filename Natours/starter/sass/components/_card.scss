@@ -18,6 +18,7 @@
         width: 100%;
         backface-visibility: hidden; //hides back part of element
         border-radius: 3px;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
@@ -47,7 +48,9 @@
     &__picture {
         background-size: cover;
         height: 23rem;
-        background-blend-mode: screen;//doesnt work on IE or Microsoft edge
+        background-blend-mode: screen;//doesnt work on IE or Microsoft edge other 
+        //options: soft-light
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1 {
             background-image: 
