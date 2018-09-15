@@ -11,6 +11,7 @@
     background-position: top; /* OR CENTER ensures top image always stays at top of container when resizing */
     position: relative;
 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /*clip off the corner*/
 
     &__logo-box {
