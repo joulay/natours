@@ -47,9 +47,13 @@
     &__picture {
         background-size: cover;
         height: 23rem;
+        background-blend-mode: screen;//doesnt work on IE or Microsoft edge
 
         &--1 {
-            background-image: url(../img/nat-5.jpg);
+            background-image: 
+            linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+            url(../img/nat-5.jpg);
+
         }
         &--2 {
             background-image: url(../img/nat-6.jpg);
