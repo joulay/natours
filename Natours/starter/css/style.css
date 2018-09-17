@@ -98,6 +98,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .btn:link, .btn:visited {
   /*pseudo class*/
   text-transform: uppercase;
