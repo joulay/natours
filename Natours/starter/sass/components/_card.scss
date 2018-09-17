@@ -2,11 +2,11 @@
     perspective: 150rem; 
     -moz-perspective: 150rem; //to work in firefox as well
     position: relative;
-    height: 50rem; //necessary to have for card to match height
+    height: 52rem; //necessary to have for card to match height
     
 
     &__side {
-        height: 50rem;
+        height: 52rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -88,10 +88,12 @@
     }
 
     &__details {
+        padding: 3rem;
 
         ul {
             list-style: none;
             width: 80%;
+            margin: 0 auto;
 
             li {
                 text-align: center;
