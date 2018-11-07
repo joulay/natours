@@ -5,6 +5,7 @@
     background-color: $color-white;
     border-radius: 3px;
     padding: 6rem;
+    padding-left: 9rem;
     font-size: $default-font-size;
 
     &__shape {
@@ -12,5 +13,10 @@
         height: 15rem;
         float: left;
         background-color: orangered;
+        -webkit-shape-outside: circle(50% at 50% 50%); //required in safari
+        shape-outside: circle(50% at 50% 50%); //requires width, height and float DEFINES WHERE CONTENT FLOATS
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%); //how element looks like circle
+        transform: translateX(-3rem); //moves to the left
     }
 }
