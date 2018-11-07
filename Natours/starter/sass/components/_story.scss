@@ -7,6 +7,11 @@
     padding: 6rem;
     padding-left: 9rem;
     font-size: $default-font-size;
+    transform: skewX(-12deg);
+    
+    & > * {
+        transform: skewX(12deg);
+    }
 
     &__shape {
         width: 15rem;
@@ -16,12 +21,15 @@
         shape-outside: circle(50% at 50% 50%); //requires width, height and float DEFINES WHERE CONTENT FLOATS
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%); //how element looks like circle
-        transform: translateX(-3rem); //moves to the left
+        transform: translateX(-3rem) skewX(12deg); //moves to the left & added skewX to fix the pic
     }
-
 
     &__img {
         height: 100%; //img is inside shape, so 100% of parent
         
+    }
+
+    &__text {
+        transform: skewX(12deg);
     }
 }
