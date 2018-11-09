@@ -52,6 +52,10 @@
         display: inline-block;
     }
 
+    &__radio-input {
+        display: none; //takes away the generic radio circle
+    }
+
     &__radio-label {
         font-size: $default-font-size;
         cursor: pointer;
