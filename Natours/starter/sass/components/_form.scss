@@ -22,19 +22,28 @@
         }
 
         &:focus:invalid { //pseudo class for input
-            border-bottom: 3px solid $color-secondary-dark;            
+            border-bottom: 3px solid $color-secondary-dark; //1           
         }
 
         &::-webkit-input-placeholder { //only work on safari and chrome
             color: $color-grey-dark-2;
         } 
+
     }
 
 
-
-
-
     &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem; 
+        margin-top: .7rem;
+        display: block; //needed to use box model
+        transition: all .3s; //2: added after input:placeholder-shown
+    }
 
+    &__input:placeholder-shown + &__label { //+ SIBLING SELECTOR, if there's more elements between, need ot use ~ Sibling Selector
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem)
     }
 }
