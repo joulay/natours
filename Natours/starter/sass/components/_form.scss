@@ -7,23 +7,32 @@
         font-size: 1.5rem;
         font-family: inherit; //automatically inherit font family
         padding: 1.5rem 2rem;
+        color: inherit;
         border-radius: 2px;
         background-color: rgba($color-white, .5);
         border: none;
         border-bottom: 3px solid transparent; //2:added so that it doesn't move when input is in focus
         width: 90%;
         display: block;
+
+        &:focus {
+            outline: none; //takes away blue around input form
+            box-shadow: 0 1rem 2rem rgba($color-black, .1); //for acessibility reasons
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &:focus:invalid { //pseudo class for input
+            border-bottom: 3px solid $color-secondary-dark;            
+        }
+
+        &::-webkit-input-placeholder { //only work on safari and chrome
+            color: $color-grey-dark-2;
+        } 
     }
 
-    &__input:focus {
-        outline: none; //takes away blue around input form
-        box-shadow: 0 1rem 2rem rgba($color-black, .1); //for acessibility reasons
-        border-bottom: 3px solid $color-primary;
-    }
 
-    &::-webkit-input-placeholder { //only work on safari and chrome
 
-    } 
+
 
     &__label {
 
