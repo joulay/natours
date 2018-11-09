@@ -1,12 +1,29 @@
 .form {
-    &__group {
-
+    &__group:not(:last-child) { //so margin except last
+        margin-bottom: 2rem;
     }
 
     &__input {
         font-size: 1.5rem;
+        font-family: inherit; //automatically inherit font family
         padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        border-bottom: 3px solid transparent; //2:added so that it doesn't move when input is in focus
+        width: 90%;
+        display: block;
     }
+
+    &__input:focus {
+        outline: none; //takes away blue around input form
+        box-shadow: 0 1rem 2rem rgba($color-black, .1); //for acessibility reasons
+        border-bottom: 3px solid $color-primary;
+    }
+
+    &::-webkit-input-placeholder { //only work on safari and chrome
+
+    } 
 
     &__label {
 
